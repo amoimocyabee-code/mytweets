@@ -1,4 +1,4 @@
-name: Update tweets
+name: Update
 
 on:
   workflow_dispatch:
@@ -25,5 +25,5 @@ jobs:
 
       - run: yarn install --frozen-lockfile
 
-      - name: Update tweets
+      - name: Update
         run: yarn update-tweets
