@@ -15,7 +15,7 @@ jobs:
     name: "Update"
     runs-on: ubuntu-latest
     env:
-      AWS_REGION: ${{ secrets.AWS_REGION }} # ← この部分を移動させます
+      AWS_REGION: ${{ secrets.AWS_REGION }} 
      if: github.repository != 'azu/mytweets' # DO NOT RUN in azu/mytweets
     steps:
       - name: checkout
