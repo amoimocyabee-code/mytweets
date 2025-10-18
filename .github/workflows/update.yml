@@ -37,6 +37,7 @@ jobs:
           [ -n "$BLUESKY_IDENTIFIER" ] && yarn run fetch-bsky
           yarn run upload-s3
         env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
           S3_AWS_ACCESS_KEY_ID: ${{ secrets.S3_AWS_ACCESS_KEY_ID }}
           S3_AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_AWS_SECRET_ACCESS_KEY }}
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
